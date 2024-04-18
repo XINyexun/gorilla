@@ -1,0 +1,48 @@
+[
+    {
+        "user_name": "meenakshimittal",
+        "api_name": "Youtube API - abuseReports.insert",
+        "api_call": "youtube.abuseReports().insert(part: str).execute()",
+        "api_version": "v3",
+        "api_arguments": {
+            "part": "[REQUIRED] string: The *part* parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include."
+        },
+        "functionality": "Inserts a new resource into this collection.",
+        "env_requirements": [
+            "google-auth",
+            "google-auth-oauthlib",
+            "google-auth-httplib2",
+            "google-api-python-client"
+        ],
+        "metadata": {
+            "documentation_link": "https://developers.google.com/youtube/v3/docs"
+        }
+    },
+    {
+        "user_name": "meenakshimittal",
+        "api_name": "Youtube API - activities.list",
+        "api_call": "youtube.activities().list(part: str).execute()",
+        "api_version": "v3",
+        "api_arguments": {
+            "channelId": "string",
+            "home": "boolean",
+            "maxResults": "integer: The *maxResults* parameter specifies the maximum number of items that should be returned in the result set.",
+            "mine": "boolean",
+            "pageToken": "string: The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.",
+            "part": "[REQUIRED] string: The *part* parameter specifies a comma-separated list of one or more activity resource properties that the API response will include. If the parameter identifies a property that contains child properties, the child properties will be included in the response. For example, in an activity resource, the snippet property contains other properties that identify the type of activity, a display title for the activity, and so forth. If you set *part=snippet*, the API response will also contain all of those nested properties.",
+            "publishedAfter": "string",
+            "publishedBefore": "string",
+            "regionCode": "string"
+        },
+        "functionality": "Retrieves a list of resources, possibly filtered.",
+        "env_requirements": [
+            "google-auth",
+            "google-auth-oauthlib",
+            "google-auth-httplib2",
+            "google-api-python-client"
+        ],
+        "metadata": {
+            "documentation_link": "https://developers.google.com/youtube/v3/docs"
+        }
+    }
+]            
